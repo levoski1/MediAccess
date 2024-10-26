@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
     <head>
+		{% load static %}
         <!-- Meta Tags -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,43 +10,45 @@
 		<meta name='copyright' content=''>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
+		
 		<!-- Title -->
-        <title>Mediplus - Free Medical and Doctor Directory HTML Template.</title>
+        <title>MedAccess - Streamlining Healthcare with Digital Solutions.</title>
 		
 		<!-- Favicon -->
-        <link rel="icon" href="img/favicon.png">
+        <link rel="icon" href="{% static 'app/img/favicon.png'%}">
 		
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
-
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<!-- Nice Select CSS -->
-		<link rel="stylesheet" href="css/nice-select.css">
-		<!-- Font Awesome CSS -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-		<!-- icofont CSS -->
-        <link rel="stylesheet" href="css/icofont.css">
-		<!-- Slicknav -->
-		<link rel="stylesheet" href="css/slicknav.min.css">
-		<!-- Owl Carousel CSS -->
-        <link rel="stylesheet" href="css/owl-carousel.css">
-		<!-- Datepicker CSS -->
-		<link rel="stylesheet" href="css/datepicker.css">
-		<!-- Animate CSS -->
-        <link rel="stylesheet" href="css/animate.min.css">
-		<!-- Magnific Popup CSS -->
-        <link rel="stylesheet" href="css/magnific-popup.css">
 		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="{% static 'app/css/bootstrap.min.css' %}">
+		<!-- Nice Select CSS -->
+		<link rel="stylesheet" href="{% static 'app/css/nice-select.css'%}">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="{% static 'app/css/font-awesome.min.css'%}">
+		<!-- icofont CSS -->
+        <link rel="stylesheet" href="{% static 'app/css/icofont.css'%}">
+		<!-- Slicknav -->
+		<link rel="stylesheet" href="{% static 'app/css/slicknav.min.css'%}">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="{% static 'app/css/owl-carousel.css'%}">
+		<!-- Datepicker CSS -->
+		<link rel="stylesheet" href="{% static 'app/css/datepicker.css'%}">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="{% static 'app/css/animate.min.css'%}">
+		<!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="{% static 'app/css/magnific-popup.css'%}">
+	
 		<!-- Medipro CSS -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="{% static 'app/css/normalize.css'%}">
+        <link rel="stylesheet" href="{% static 'app/css/style.css'%}">
+        <link rel="stylesheet" href="{% static 'app/css/responsive.css'%}">
 		
     </head>
     <body>
 	
 		<!-- Preloader -->
+
         <div class="preloader">
             <div class="loader">
                 <div class="loader-outter"></div>
@@ -59,12 +62,13 @@
                 </div>
             </div>
         </div>
+
         <!-- End Preloader -->
 		
 		<!-- Get Pro Button -->
 		<ul class="pro-features">
 			<a class="get-pro" href="#">Get Pro</a>
-			<li class="big-title">Pro Version Available on Themeforest</li>
+			<li class="big-title">MedAccess Pro Version Available</li>
 			<li class="title">Pro Version Features</li>
 			<li>2+ premade home pages</li>
 			<li>20+ html pages</li>
@@ -72,8 +76,8 @@
 			<li>Sticky Header / Sticky Filters</li>
 			<li>Working Contact Form With Google Map</li>
 			<div class="button">
-				<a href="http://preview.themeforest.net/item/mediplus-medical-and-doctor-html-template/full_screen_preview/26665910?_ga=2.145092285.888558928.1591971968-344530658.1588061879" target="_blank" class="btn">Pro Version Demo</a>
-				<a href="https://themeforest.net/item/mediplus-medical-and-doctor-html-template/26665910" target="_blank" class="btn">Buy Pro Version</a>
+				<a href="#" target="_blank" class="btn">Pro Version Demo</a>
+				<a href="#" target="_blank" class="btn">Access Pro Version</a>
 			</div>
 		</ul>
 	
@@ -96,8 +100,8 @@
 						<div class="col-lg-6 col-md-7 col-12">
 							<!-- Top Contact -->
 							<ul class="top-contact">
-								<li><i class="fa fa-phone"></i>+880 1234 56789</li>
-								<li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">support@yourmail.com</a></li>
+								<li><i class="fa fa-phone"></i>+2349033887693</li>
+								<li><i class="fa fa-envelope"></i><a href="mailto:soromtolevi1@gmail.com">soromtolevi1@gmail.com</a></li>
 							</ul>
 							<!-- End Top Contact -->
 						</div>
@@ -110,10 +114,10 @@
 				<div class="container">
 					<div class="inner">
 						<div class="row">
-							<div class="col-lg-3 col-md-3 col-12">
+							<div class="col-lg-3 col-md-3 col-12"> 
 								<!-- Start Logo -->
 								<div class="logo">
-									<a href="index.html"><img src="img/logo.png" alt="#"></a>
+									<a href="{% url 'app:home'%}"><img src="{% static 'app/img/logo.png'%}" alt="#"></a>
 								</div>
 								<!-- End Logo -->
 								<!-- Mobile Nav -->
@@ -125,24 +129,24 @@
 								<div class="main-menu">
 									<nav class="navigation">
 										<ul class="nav menu">
-											<li class="active"><a href="#">Home <i class="icofont-rounded-down"></i></a>
-												<ul class="dropdown">
-													<li><a href="index.html">Home Page 1</a></li>
-												</ul>
+											<li class="active"><a href="{% url 'app:home'%}">Home <i class="icofont-rounded-down"></i></a>
+												<!-- <ul class="dropdown">
+													<li><a href="#">Home Page 1</a></li>
+												</ul> -->
 											</li>
-											<li><a href="#">Doctos </a></li>
+											<li><a href="#">Doctors </a></li>
 											<li><a href="#">Services </a></li>
-											<li><a href="#">Pages <i class="icofont-rounded-down"></i></a>
+											<!-- <li><a href="#">Pages <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
-													<li><a href="404.html">404 Error</a></li>
+													<li><a href="#">404 Error</a></li>
 												</ul>
-											</li>
+											</li> -->
 											<li><a href="#">Blogs <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
-													<li><a href="blog-single.html">Blog Details</a></li>
+													<li><a href="#">Blog Details</a></li>
 												</ul>
 											</li>
-											<li><a href="contact.html">Contact Us</a></li>
+											<li><a href="#">Contact Us</a></li>
 										</ul>
 									</nav>
 								</div>
@@ -150,7 +154,7 @@
 							</div>
 							<div class="col-lg-2 col-12">
 								<div class="get-quote">
-									<a href="appointment.html" class="btn">Book Appointment</a>
+									<a href="#" class="btn">Book Appointment</a>
 								</div>
 							</div>
 						</div>
@@ -165,15 +169,15 @@
 		<section class="slider">
 			<div class="hero-slider">
 				<!-- Start Single Slider -->
-				<div class="single-slider" style="background-image:url('img/slider2.jpg')">
+				<div class="single-slider" style="background-image:url({% static 'app/img/slider2.jpg' %})">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-7">
 								<div class="text">
-									<h1>We Provide <span>Medical</span> Services That You Can <span>Trust!</span></h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam. </p>
+									<h1>Reliable <span>Healthcare</span> Services That You Can <span>Trust!</span></h1>
+									<p>Experience top-notch medical care from a team of dedicated professionals. We offer personalized treatments, advanced technology, and compassionate support to ensure your health and well-being. </p>
 									<div class="button">
-										<a href="#" class="btn">Get Appointment</a>
+										<a href="#" class="btn">Book Appointment</a>
 										<a href="#" class="btn primary">Learn More</a>
 									</div>
 								</div>
@@ -183,15 +187,15 @@
 				</div>
 				<!-- End Single Slider -->
 				<!-- Start Single Slider -->
-				<div class="single-slider" style="background-image:url('img/slider.jpg')">
+				<div class="single-slider" style="background-image:url({% static 'app/img/slider.jpg'%})">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-7">
 								<div class="text">
-									<h1>We Provide <span>Medical</span> Services That You Can <span>Trust!</span></h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam. </p>
+									<h1>Your Health, Our Priority: <span>Exceptional</span> Services That You Can <span>Rely on</span></h1>
+									<p>At MedAccess, we combine expertise and compassion to deliver world-class healthcare. Trust us to provide cutting-edge treatments, personalized attention, and a seamless care experience tailored to your needs.</p>
 									<div class="button">
-										<a href="#" class="btn">Get Appointment</a>
+										<a href="#" class="btn">Book Appointment</a>
 										<a href="#" class="btn primary">About Us</a>
 									</div>
 								</div>
@@ -201,15 +205,15 @@
 				</div>
 				<!-- Start End Slider -->
 				<!-- Start Single Slider -->
-				<div class="single-slider" style="background-image:url('img/slider3.jpg')">
+				<div class="single-slider" style="background-image:url({% static 'app/img/slider3.jpg'%})">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-7">
 								<div class="text">
-									<h1>We Provide <span>Medical</span> Services That You Can <span>Trust!</span></h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam. </p>
+									<h1>Exceptional <span>Medical</span> Services That You Can <span>Trust!</span></h1>
+									<p>Our expert team is dedicated to delivering trusted, patient-centered care. Whether you're here for a routine check-up or specialized treatment, we are committed to your well-being. </p>
 									<div class="button">
-										<a href="#" class="btn">Get Appointment</a>
+										<a href="#" class="btn">Book Appointment</a>
 										<a href="#" class="btn primary">Conatct Now</a>
 									</div>
 								</div>
@@ -235,9 +239,9 @@
 										<i class="fa fa-ambulance"></i>
 									</div>
 									<div class="single-content">
-										<span>Lorem Amet</span>
-										<h4>Emergency Cases</h4>
-										<p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
+										<span>Urgent Care</span>
+										<h4>Emergency Services</h4>
+										<p>Our emergency care team is ready to provide immediate and expert medical attention.</p>
 										<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
 									</div>
 								</div>
@@ -251,9 +255,9 @@
 										<i class="icofont-prescription"></i>
 									</div>
 									<div class="single-content">
-										<span>Fusce Porttitor</span>
-										<h4>Doctors Timetable</h4>
-										<p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
+										<span>Doctor Availability</span>
+										<h4>Doctors's Timetable</h4>
+										<p>Stay informed about our doctors' availability and plan your appointments with ease.</p>
 										<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
 									</div>
 								</div>
@@ -292,7 +296,7 @@
 					<div class="col-lg-12">
 						<div class="section-title">
 							<h2>We Are Always Ready to Help You & Your Family</h2>
-							<img src="img/section-img.png" alt="#">
+							<img src="{% static 'app/img/section-img.png'%}" alt="#">
 							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
 						</div>
 					</div>
@@ -396,7 +400,7 @@
 					<div class="col-lg-12">
 						<div class="section-title">
 							<h2>We Offer Different Services To Improve Your Health</h2>
-							<img src="img/section-img.png" alt="#">
+							<img src="{% static 'app/img/section-img.png'%}" alt="#">
 							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
 						</div>
 					</div>
@@ -429,20 +433,28 @@
 					</div>
 					<div class="col-lg-6 col-12">
 						<!-- Start Choose Rights -->
-						<div class="choose-right">
-							<div class="video-image">
+
+						<!-- <div class="choose-right">
+							<div class="video-image"> -->
+
 								<!-- Video Animation -->
+<!-- 
 								<div class="promo-video">
 									<div class="waves-block">
 										<div class="waves wave-1"></div>
 										<div class="waves wave-2"></div>
 										<div class="waves wave-3"></div>
 									</div>
-								</div>
+								</div> -->
+
 								<!--/ End Video Animation -->
-								<a href="https://www.youtube.com/watch?v=RFVXy6CRVR4" class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a>
+
+								<!-- <a href="https://www.youtube.com/watch?v=RFVXy6CRVR4" class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a>
 							</div>
-						</div>
+						</div> -->
+						
+						<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/riEs9MzYdl0?si=AC4PZEVHc8_2LtB7&amp;start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 						<!-- End Choose Rights -->
 					</div>
 				</div>
@@ -476,7 +488,7 @@
 					<div class="col-lg-12">
 						<div class="section-title">
 							<h2>We Maintain Cleanliness Rules Inside Our Hospital</h2>
-							<img src="img/section-img.png" alt="#">
+							<img src="{% static 'app/img/section-img.png'%}" alt="#">
 							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
 						</div>
 					</div>
@@ -487,36 +499,36 @@
 					<div class="col-lg-12 col-12">
 						<div class="owl-carousel portfolio-slider">
 							<div class="single-pf">
-								<img src="img/pf1.jpg" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+								<img src="{% static 'app/img/pf1.jpg'%}" alt="#">
+								<a href="#" class="btn">View Details</a>
 							</div>
 							<div class="single-pf">
-								<img src="img/pf2.jpg" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+								<img src="{% static 'app/img/pf2.jpg'%}" alt="#">
+								<a href="#" class="btn">View Details</a>
 							</div>
 							<div class="single-pf">
-								<img src="img/pf3.jpg" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+								<img src="{% static 'app/img/pf3.jpg'%}" alt="#">
+								<a href="#" class="btn">View Details</a>
 							</div>
 							<div class="single-pf">
-								<img src="img/pf4.jpg" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+								<img src="{% static 'app/img/pf4.jpg'%}" alt="#">
+								<a href="#" class="btn">View Details</a>
 							</div>
 							<div class="single-pf">
-								<img src="img/pf1.jpg" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+								<img src="{% static 'app/img/pf1.jpg'%}" alt="#">
+								<a href="#" class="btn">View Details</a>
 							</div>
 							<div class="single-pf">
-								<img src="img/pf2.jpg" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+								<img src="{% static 'app/img/pf2.jpg'%}" alt="#">
+								<a href="#" class="btn">View Details</a>
 							</div>
 							<div class="single-pf">
-								<img src="img/pf3.jpg" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+								<img src="{% static 'app/img/pf3.jpg'%}" alt="#">
+								<a href="#" class="btn">View Details</a>
 							</div>
 							<div class="single-pf">
-								<img src="img/pf4.jpg" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+								<img src="{% static 'app/img/pf4.jpg'%}" alt="#">
+								<a href="#" class="btn">View Details</a>
 							</div>
 						</div>
 					</div>
@@ -532,7 +544,7 @@
 					<div class="col-lg-12">
 						<div class="section-title">
 							<h2>We Offer Different Services To Improve Your Health</h2>
-							<img src="img/section-img.png" alt="#">
+							<img src="{% static 'app/img/section-img.png'%}" alt="#">
 							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
 						</div>
 					</div>
@@ -542,7 +554,7 @@
 						<!-- Start Single Service -->
 						<div class="single-service">
 							<i class="icofont icofont-prescription"></i>
-							<h4><a href="service-details.html">General Treatment</a></h4>
+							<h4><a href="#">General Treatment</a></h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
 						</div>
 						<!-- End Single Service -->
@@ -551,7 +563,7 @@
 						<!-- Start Single Service -->
 						<div class="single-service">
 							<i class="icofont icofont-tooth"></i>
-							<h4><a href="service-details.html">Teeth Whitening</a></h4>
+							<h4><a href="#">Teeth Whitening</a></h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
 						</div>
 						<!-- End Single Service -->
@@ -560,7 +572,7 @@
 						<!-- Start Single Service -->
 						<div class="single-service">
 							<i class="icofont icofont-heart-alt"></i>
-							<h4><a href="service-details.html">Heart Surgery</a></h4>
+							<h4><a href="#">Heart Surgery</a></h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
 						</div>
 						<!-- End Single Service -->
@@ -569,7 +581,7 @@
 						<!-- Start Single Service -->
 						<div class="single-service">
 							<i class="icofont icofont-listening"></i>
-							<h4><a href="service-details.html">Ear Treatment</a></h4>
+							<h4><a href="#">Ear Treatment</a></h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
 						</div>
 						<!-- End Single Service -->
@@ -578,7 +590,7 @@
 						<!-- Start Single Service -->
 						<div class="single-service">
 							<i class="icofont icofont-eye-alt"></i>
-							<h4><a href="service-details.html">Vision Problems</a></h4>
+							<h4><a href="#">Vision Problems</a></h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
 						</div>
 						<!-- End Single Service -->
@@ -587,7 +599,7 @@
 						<!-- Start Single Service -->
 						<div class="single-service">
 							<i class="icofont icofont-blood"></i>
-							<h4><a href="service-details.html">Blood Transfusion</a></h4>
+							<h4><a href="#">Blood Transfusion</a></h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
 						</div>
 						<!-- End Single Service -->
@@ -604,7 +616,7 @@
 					<div class="col-lg-12">
 						<div class="section-title">
 							<h2>We Provide You The Best Treatment In Resonable Price</h2>
-							<img src="img/section-img.png" alt="#">
+							<img src="{% static 'app/img/section-img.png'%}" alt="#">
 							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
 						</div>
 					</div>
@@ -708,7 +720,7 @@
 					<div class="col-lg-12">
 						<div class="section-title">
 							<h2>Keep up with Our Most Recent Medical News.</h2>
-							<img src="img/section-img.png" alt="#">
+							<img src="{% static 'app/img/section-img.png"'%}" alt="#">
 							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
 						</div>
 					</div>
@@ -718,12 +730,12 @@
 						<!-- Single Blog -->
 						<div class="single-news">
 							<div class="news-head">
-								<img src="img/blog1.jpg" alt="#">
+								<img src="{% static 'app/img/blog1.jpg'%}" alt="#">
 							</div>
 							<div class="news-body">
 								<div class="news-content">
 									<div class="date">22 Aug, 2020</div>
-									<h2><a href="blog-single.html">We have annnocuced our new product.</a></h2>
+									<h2><a href="#">We have annnocuced our new product.</a></h2>
 									<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
 								</div>
 							</div>
@@ -734,12 +746,12 @@
 						<!-- Single Blog -->
 						<div class="single-news">
 							<div class="news-head">
-								<img src="img/blog2.jpg" alt="#">
+								<img src="{% static 'app/img/blog2.jpg'%}" alt="#">
 							</div>
 							<div class="news-body">
 								<div class="news-content">
 									<div class="date">15 Jul, 2020</div>
-									<h2><a href="blog-single.html">Top five way for solving teeth problems.</a></h2>
+									<h2><a href="#">Top five way for solving teeth problems.</a></h2>
 									<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
 								</div>
 							</div>
@@ -750,12 +762,12 @@
 						<!-- Single Blog -->
 						<div class="single-news">
 							<div class="news-head">
-								<img src="img/blog3.jpg" alt="#">
+								<img src="{% static 'app/img/blog3.jpg' %}" alt="#">
 							</div>
 							<div class="news-body">
 								<div class="news-content">
 									<div class="date">05 Jan, 2020</div>
-									<h2><a href="blog-single.html">We provide highly business soliutions.</a></h2>
+									<h2><a href="#">We provide highly business soliutions.</a></h2>
 									<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
 								</div>
 							</div>
@@ -774,31 +786,31 @@
 					<div class="col-lg-12 col-md-12 col-12">
 						<div class="owl-carousel clients-slider">
 							<div class="single-clients">
-								<img src="img/client1.png" alt="#">
+								<img src="{% static 'app/img/client1.png' %}" alt="#">
 							</div>
 							<div class="single-clients">
-								<img src="img/client2.png" alt="#">
+								<img src="{% static 'app/img/client2.png' %}" alt="#">
 							</div>
 							<div class="single-clients">
-								<img src="img/client3.png" alt="#">
+								<img src="{% static 'app/img/client3.png' %}" alt="#">
 							</div>
 							<div class="single-clients">
-								<img src="img/client4.png" alt="#">
+								<img src="{% static 'app/img/client4.png' %}" alt="#">
 							</div>
 							<div class="single-clients">
-								<img src="img/client5.png" alt="#">
+								<img src="{% static 'app/img/client5.png' %}" alt="#">
 							</div>
 							<div class="single-clients">
-								<img src="img/client1.png" alt="#">
+								<img src="{% static 'app/img/client1.png' %}" alt="#">
 							</div>
 							<div class="single-clients">
-								<img src="img/client2.png" alt="#">
+								<img src="{% static 'app/img/client2.png' %}" alt="#">
 							</div>
 							<div class="single-clients">
-								<img src="img/client3.png" alt="#">
+								<img src="{% static 'app/img/client3.png' %}" alt="#">
 							</div>
 							<div class="single-clients">
-								<img src="img/client4.png" alt="#">
+								<img src="{% static 'app/img/client4.png' %}" alt="#">
 							</div>
 						</div>
 					</div>
@@ -814,7 +826,7 @@
 					<div class="col-lg-12">
 						<div class="section-title">
 							<h2>We Are Always Ready to Help You. Book An Appointment</h2>
-							<img src="img/section-img.png" alt="#">
+							<img src="{% static 'app/img/section-img.png' %}" alt="#">
 							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
 						</div>
 					</div>
@@ -890,7 +902,7 @@
 					</div>
 					<div class="col-lg-6 col-md-12 ">
 						<div class="appointment-image">
-							<img src="img/contact-img.png" alt="#">
+							<img src="{% static 'app/img/contact-img.png' %}" alt="#">
 						</div>
 					</div>
 				</div>
@@ -898,7 +910,7 @@
 		</section>
 		<!-- End Appointment -->
 		
-		<!-- Start Newsletter Area -->
+
 		<section class="newsletter section">
 			<div class="container">
 				<div class="row ">
@@ -1004,7 +1016,7 @@
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-12">
 							<div class="copyright-content">
-								<p>© Copyright 2018  |  All Rights Reserved by <a href="https://www.wpthemesgrid.com" target="_blank">wpthemesgrid.com</a> </p>
+								<p>© Copyright 2024  |  All Rights Reserved by <a href="#" target="_blank">Levicode</a> </p>
 							</div>
 						</div>
 					</div>
@@ -1015,44 +1027,44 @@
 		<!--/ End Footer Area -->
 		
 		<!-- jquery Min JS -->
-        <script src="js/jquery.min.js"></script>
+        <script src="{% static 'app/js/jquery.min.js'%}"></script>
 		<!-- jquery Migrate JS -->
-		<script src="js/jquery-migrate-3.0.0.js"></script>
+		<script src="{% static 'app/js/jquery-migrate-3.0.0.js'%}"></script>
 		<!-- jquery Ui JS -->
-		<script src="js/jquery-ui.min.js"></script>
+		<script src="{% static 'app/js/jquery-ui.min.js'%}"></script>
 		<!-- Easing JS -->
-        <script src="js/easing.js"></script>
+        <script src="{% static 'app/js/easing.js'%}"></script>
 		<!-- Color JS -->
-		<script src="js/colors.js"></script>
+		<script src="{% static 'app/js/colors.js'%}"></script>
 		<!-- Popper JS -->
-		<script src="js/popper.min.js"></script>
+		<script src="{% static 'app/js/popper.min.js'%}"></script>
 		<!-- Bootstrap Datepicker JS -->
-		<script src="js/bootstrap-datepicker.js"></script>
-		<!-- Jquery Nav JS -->
-        <script src="js/jquery.nav.js"></script>
+		<script src="{% static 'app/js/bootstrap-datepicker.js'%}"></script>
+		<!-- Jquery Nav JS --> 
+        <script src="{% static 'app/js/jquery.nav.js'%}"></script>
 		<!-- Slicknav JS -->
-		<script src="js/slicknav.min.js"></script>
+		<script src="{% static 'app/js/slicknav.min.js'%}"></script>
 		<!-- ScrollUp JS -->
-        <script src="js/jquery.scrollUp.min.js"></script>
+        <script src="{% static 'app/'%}js/jquery.scrollUp.min.js"></script>
 		<!-- Niceselect JS -->
-		<script src="js/niceselect.js"></script>
+		<script src="{% static 'app/js/niceselect.js'%}"></script>
 		<!-- Tilt Jquery JS -->
-		<script src="js/tilt.jquery.min.js"></script>
+		<script src=" {% static 'app/js/tilt.jquery.min.js'%}"></script>
 		<!-- Owl Carousel JS -->
-        <script src="js/owl-carousel.js"></script>
+        <script src="{% static 'app/js/owl-carousel.js'%}"></script> 
 		<!-- counterup JS -->
-		<script src="js/jquery.counterup.min.js"></script>
+		<script src="{% static 'app/js/jquery.counterup.min.js'%}"></script>
 		<!-- Steller JS -->
-		<script src="js/steller.js"></script>
+		<script src="{% static 'app/js/steller.js'%}"></script>
 		<!-- Wow JS -->
-		<script src="js/wow.min.js"></script>
+		<script src="{% static 'app/js/wow.min.js'%}"></script>
 		<!-- Magnific Popup JS -->
-		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="{% static 'app/js/jquery.magnific-popup.min.js'%}"></script>
 		<!-- Counter Up CDN JS -->
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 		<!-- Bootstrap JS -->
-		<script src="js/bootstrap.min.js"></script>
+		<script src="{% static 'app/js/bootstrap.min.js'%}"></script>
 		<!-- Main JS -->
-		<script src="js/main.js"></script>
+		<script src="{% static 'app/js/main.js'%}"></script>
     </body>
 </html>
