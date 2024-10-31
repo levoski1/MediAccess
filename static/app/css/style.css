@@ -1467,7 +1467,7 @@ body{
 	border-radius: 3px;
 	margin: 0 0 0 -52px;
 	margin-top: 49px;
-	box-sizing: ;
+	box-sizing:0;
 }
 .testimonials .owl-dots .owl-dot {
 	display: inline-block;
@@ -3433,10 +3433,12 @@ body{
 	margin-top:5px;
 }
 /* Google Map */
-.contact-us #myMap {
+
+/* .contact-us #myMap {
 	height: 100%;
 	width: 100%;
-}
+} */
+
 /*=========================
    End Contact Us CSS
 ===========================*/
