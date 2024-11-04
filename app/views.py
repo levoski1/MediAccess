@@ -6,6 +6,9 @@ from typing import List, Tuple, Dict
 
 # Mail
 def send_gmail(*mail: Tuple) -> str:
+    '''
+    This functiion 5 arguments and they are passed accordinly.
+    '''
     subject, message_body, user_email, user_name, phone = mail
 
      # Construct the email message
