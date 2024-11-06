@@ -40,9 +40,11 @@
         <link rel="stylesheet" href="{% static 'app/css/magnific-popup.css'%}">
 	
 		<!-- Medipro CSS -->
+		<link rel="stylesheet" href="{% static 'app/css/book.css' %}">
         <link rel="stylesheet" href="{% static 'app/css/normalize.css'%}">
         <link rel="stylesheet" href="{% static 'app/css/style.css'%}">
         <link rel="stylesheet" href="{% static 'app/css/responsive.css'%}">
+		
 		
     </head>
     <body>
@@ -154,7 +156,7 @@
 							</div>
 							<div class="col-lg-2 col-12">
 								<div class="get-quote">
-									<a href="#" class="btn">Book Appointment</a>
+									<a href="{% url 'app:book'%}" class="btn">Book Appointment</a>
 								</div>
 							</div>
 						</div>
