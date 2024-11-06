@@ -1,6 +1,6 @@
 env/
 */__pycache__
-app/migrations
+*/migrations/
 db.sqlite3
 __pycache__/
 .env
