@@ -30,7 +30,7 @@ To run MedAccess locally, ensure you have the following installed:
 ### Running the Application
 1. **Clone the Repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/levoski1/MediAccess.git
    cd medaccess
    ```
 
