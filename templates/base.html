@@ -51,7 +51,7 @@
 	
 		<!-- Preloader -->
 
-        <div class="preloader">
+        <!-- <div class="preloader">
             <div class="loader">
                 <div class="loader-outter"></div>
                 <div class="loader-inner"></div>
@@ -63,7 +63,25 @@
                     </svg>
                 </div>
             </div>
-        </div>
+        </div> -->
+
+		<div class="preloader">
+			<div class="loader">
+				<div class="loader-spinner">
+					<svg width="50px" height="50px" viewBox="0 0 50 50">
+						<circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+					</svg>
+				</div>
+		
+				<div class="indicator">
+					<svg width="16px" height="12px">
+						<polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+						<polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+					</svg>
+				</div>
+			</div>
+		</div>
+		
 
         <!-- End Preloader -->
 		
@@ -119,7 +137,7 @@
 							<div class="col-lg-3 col-md-3 col-12"> 
 								<!-- Start Logo -->
 								<div class="logo">
-									<a href="{% url 'app:home'%}"><img src="{% static 'app/img/logo.png'%}" alt="#"></a>
+									<a href="{% url 'app:home'%}"><h3><b style="color: #1A76D1;">Medi <span><b>Access</b></span></b></h3></a>
 								</div>
 								<!-- End Logo -->
 								<!-- Mobile Nav -->

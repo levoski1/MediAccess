@@ -2,7 +2,7 @@ from typing import Tuple, Dict
 
 
 # Mail
-def send_gmail(*mail: Tuple) -> str:
+def from_contact(*mail: Tuple) -> str:
     '''
     This functiion 5 arguments and they are passed accordinly.
     '''
@@ -15,7 +15,7 @@ def send_gmail(*mail: Tuple) -> str:
 
     return message
 
-def book(*mail: Tuple) -> str:
+def from_book(*mail: Tuple) -> str:
     '''
     This functiion 5 arguments and they are passed accordinly.
     '''
@@ -23,7 +23,7 @@ def book(*mail: Tuple) -> str:
 
      # Construct the email message
     message = f"Hello Admin,\n\nYou've received a new message from the contact form on your website.\n\n"
-    message += f"Name: {user_name}\nEmail: {user_email}\nPhone: {date}\nSubject: {subject}\n\nMessage:\n{message_body}\n\n"
+    message += f"Name: {user_name}\nEmail: {user_email}\nAppointment Date: {date}\nSubject: {subject}\n\nMessage:\n{message_body}\n\n"
     message += "Please reply directly to this email to contact the user."
 
     return message
